@@ -1,10 +1,9 @@
 
-import HTMLParser from './html-parser.js';
 
 const NodeTool = {
-  parseMath: function(html) {
-    const parser = new HTMLParser();
-    const doc = parser.parseFromString(html, 'text/html');
+  parseMath: function(mml) {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(mml, "application/xml");
     return doc.querySelector('math');
   },
   getChildren: function(node) {
@@ -32,4 +31,4 @@ const NodeTool = {
   }
 }
 
-export default NodeTool;
+

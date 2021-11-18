@@ -65,4 +65,4 @@ function shouldUseActiveX () {
   return useActiveX
 }
 
-export default canParseHTMLNatively() ? root.DOMParser : createHTMLParser()
+

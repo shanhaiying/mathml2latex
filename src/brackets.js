@@ -64,4 +64,4 @@ const Brackets = {
   }
 }
 
-export default Brackets;
+
