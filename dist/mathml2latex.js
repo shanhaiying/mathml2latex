@@ -655,7 +655,7 @@ var MathML2LaTeX = (function () {
                   parts.push(Brackets.parseLeft(op, stretchy));
                   lefts.push(op);
                 } else {
-                  console.error("bracket not match");
+                  console.log("Error：bracket not match");
                 }
               }
             }else {
@@ -664,7 +664,7 @@ var MathML2LaTeX = (function () {
                 parts.push(Brackets.parseLeft(op, stretchy));
                 lefts.push(op);
               }else {
-                console.error("bracket not match");
+                console.log("Error：bracket not match");
               }
             }
           } else {
